@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --- PALETTE "ELECTRIC DARK" --- */
+  --bg-page: #030712; /* Noir très profond */
+  --bg-card: rgba(31, 41, 55, 0.6);
+  --text-main: #F9FAFB;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  /* Grille subtile en fond */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* --- BOUTON ÉLECTRIQUE --- */
+.btn-electric {
+  background: linear-gradient(135deg, #7C3AED 0%, #DB2777 100%);
+  color: white;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.4);
+  transition: all 0.3s ease;
+}
+.btn-electric:hover {
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.6);
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* --- CARTE DARK GLASS --- */
+.card-dark {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  transition: all 0.4s ease;
+}
+.card-dark:hover {
+  border-color: rgba(124, 58, 237, 0.5);
+  background: rgba(31, 41, 55, 0.9);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+/* --- INPUTS SOMBRES --- */
+.input-dark {
+  background-color: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+.input-dark:focus {
+  border-color: #8B5CF6;
+  background-color: rgba(17, 24, 39, 1);
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.3);
+  outline: none;
+}
+
+/* --- TEXTE GRADIENT --- */
+.text-gradient {
+  background: linear-gradient(to right, #A78BFA, #F472B6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Scrollbar sombre */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #030712; }
+::-webkit-scrollbar-thumb { background: #4B5563; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #7C3AED; }
