@@ -189,7 +189,8 @@ export default function AgenceVioletElectric() {
                 </motion.button>
             )}
         </AnimatePresence>
-        <a href="https://wa.me/33600000000" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-[#25D366] rounded-full shadow-lg flex items-center justify-center text-white hover:scale-110 transition-transform">
+        {/* LIEN WHATSAPP MIS À JOUR */}
+        <a href="https://wa.me/33667936523" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-[#25D366] rounded-full shadow-lg flex items-center justify-center text-white hover:scale-110 transition-transform">
             <MessageCircle size={28} fill="white" className="text-white" />
         </a>
       </div>
@@ -311,11 +312,14 @@ export default function AgenceVioletElectric() {
                 <h3 className="text-xl font-bold text-white mb-3">UI/UX Design & Branding</h3>
                 <p className="text-gray-400 leading-relaxed">Interfaces futuristes et intuitives. Nous créons des identités visuelles fortes qui marquent les esprits et convertissent les visiteurs en clients fidèles.</p>
             </div>
+            
+            {/* TEXTE TECH ELITE MODIFIÉ ICI */}
             <div className="card-dark p-8 bg-gradient-to-br from-violet-900/50 to-fuchsia-900/50 border-violet-500/30">
                 <div className="w-12 h-12 bg-white/10 text-white rounded-xl flex items-center justify-center mb-6"><Rocket size={28}/></div>
                 <h3 className="text-xl font-bold text-white mb-3">Tech Elite</h3>
-                <p className="text-violet-100 leading-relaxed">Next.js, React, Node. Performance maximale et sécurité militaire.</p>
+                <p className="text-violet-100 leading-relaxed">Architecture bâtie sur les dernières technologies du marché. Nous garantissons une fluidité absolue, une performance maximale et une sécurité efficace.</p>
             </div>
+
             <div className="card-dark p-8">
                 <div className="w-12 h-12 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-xl flex items-center justify-center mb-6"><Smartphone size={28}/></div>
                 <h3 className="text-xl font-bold text-white mb-3">Mobile First</h3>
